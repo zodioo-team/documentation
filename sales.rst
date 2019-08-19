@@ -11,4 +11,5 @@ Sales
    sales/invoicing
    sales/products_prices
    sales/sale_ebay
+   sales/sale_renting
    sales/advanced
