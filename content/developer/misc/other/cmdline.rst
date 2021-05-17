@@ -292,9 +292,11 @@ Emails
 
 .. option:: --from-filter <address or domain>
 
-    Email address or domain that the mail server is configured for. If the 
-    email of the sender does not match this value, it might be encapsulated 
-    into ``mail.default.from``.
+    Define which email address the SMTP configuration will apply to. This field can be empty, a domain
+name, or an entire email address. If the sender's email address does not match this set filter,
+then the email will be encapsulated using a combination of the two system parameters:
+``mail.default.from`` and ``mail.catchall.domain``.
+For example "Admin" <admin@example.com> => "Admin" <notifications@mycompany.com>.
 
 .. option:: --smtp <server>
 
@@ -316,11 +318,13 @@ Emails
 
 .. option:: --smtp-ssl-certificate-filename <path/to/cert.pem>
 
-    SSL certificate used for SMTP authentication
+    A SSL certificate is to be used for authentication. If set, then "smtp-ssl-private-key" is
+ required.
 
 .. option:: --smtp-ssl-private-key-filename <path/to/key.pem>
 
-    SSL private key used for SMTP authentication
+    A SSL private key is to be used for authentication. If set, then "smtp-ssl-certificate" is
+required.
 
 .. _reference/cmdline/server/internationalisation:
 
