@@ -12,3 +12,4 @@ Send Quotations
    send_quotations/deadline
    send_quotations/different_addresses
    send_quotations/terms_and_conditions
+   send_quotations/orders_and_variants.rst
