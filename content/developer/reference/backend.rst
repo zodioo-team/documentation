@@ -14,6 +14,7 @@ Backend
     backend/module
     backend/reports
     backend/security
+    backend/performances
     backend/testing
     backend/http
     backend/mixins

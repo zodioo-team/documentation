@@ -11,7 +11,6 @@ Tutorials
     howtos/themes
     howtos/website
     howtos/backend
-    howtos/profilecode
     howtos/company
     howtos/accounting_localization
     howtos/translations
