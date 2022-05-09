@@ -343,3 +343,10 @@ developer/reference/frontend/generic_components.rst              developer/refer
 
 developer/misc/i18n/localization.rst                    developer/howtos/accounting_localization.rst
 developer/misc/i18n/translations.rst                    developer/howtos/translations.rst
+
+applications/productivity/studio/concepts/understanding_general.rst              applications/productivity/studio.rst
+applications/productivity/studio/concepts/understanding_automated_actions.rst    applications/productivity/studio/automated_actions.rst
+applications/productivity/studio/use_cases/models_fields.rst                     applications/productivity/studio/fields.rst
+applications/productivity/studio/use_cases/automated_actions.rst                 applications/productivity/studio/automated_actions.rst
+applications/productivity/studio/use_cases/views.rst                             applications/productivity/studio/views.rst
+applications/productivity/studio/how_to/export_import.rst                        applications/productivity/studio/models_modules_apps.rst
