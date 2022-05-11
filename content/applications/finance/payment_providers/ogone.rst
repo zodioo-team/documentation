@@ -9,7 +9,7 @@ Configuration on Odoo
 =====================
 
 .. seealso::
-   - :ref:`payment_acquirers/add_new`
+   - :ref:`payment_providers/add_new`
 
 Credentials tab
 ---------------
@@ -85,4 +85,4 @@ Then, fill the form with the following data:
 Save, and you are ready to go!
 
 .. seealso::
-   - :doc:`../payment_acquirers`
+   - :doc:`../payment_providers`
