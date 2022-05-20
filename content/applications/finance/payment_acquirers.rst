@@ -56,13 +56,13 @@ Online payment acquirers
 |                               | Payment flow         | Save cards | Capture amount  | Refund    |
 |                               |                      |            | manually        | from Odoo |
 +===============================+======================+============+=================+===========+
-| :doc:`Adyen                   | Payment from Odoo    | |V|        | |V|             | |V|       |
+| :doc:`Adyen                   | Payment from Odoo    | |V|        | Partial Allowed | |V|       |
 | <payment_acquirers/adyen>`    |                      |            |                 |           |
 +-------------------------------+----------------------+------------+-----------------+-----------+
 | :doc:`Alipay                  | Redirection to the   |            |                 |           |
 | <payment_acquirers/alipay>`   | acquirer website     |            |                 |           |
 +-------------------------------+----------------------+------------+-----------------+-----------+
-| :doc:`Authorize.Net           | Payment from Odoo    | |V|        | |V|             |           |
+| :doc:`Authorize.Net           | Payment from Odoo    | |V|        | Full Only       |           |
 | <payment_acquirers/authorize>`|                      |            |                 |           |
 +-------------------------------+----------------------+------------+-----------------+-----------+
 | :doc:`Buckaroo                | Redirection to the   |            |                 |           |
@@ -86,7 +86,7 @@ Online payment acquirers
 | :doc:`SIPS                    | Redirection to the   |            |                 |           |
 | <payment_acquirers/sips>`     | acquirer website     |            |                 |           |
 +-------------------------------+----------------------+------------+-----------------+-----------+
-| :doc:`Stripe                  | Redirection to the   | |V|        | |V|             |           |
+| :doc:`Stripe                  | Redirection to the   | |V|        | Full Only       |           |
 | <payment_acquirers/stripe>`   | acquirer website     |            |                 |           |
 +-------------------------------+----------------------+------------+-----------------+-----------+
 
@@ -199,6 +199,9 @@ from the customer's card.
 .. image:: payment_acquirers/media/capture.png
    :align: center
    :alt: Hold the credit card payment until you capture or revoke it on Odoo
+
+If your acquirer support the partial capture, you may additionally choose the amount you want to
+capture.
 
 .. note::
    Odoo may not yet support the manual capture for all acquirers, but some acquirers allow managing
