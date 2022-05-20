@@ -152,12 +152,12 @@ also be used for other lesser known providers.
 Use a default email address
 ===========================
 
-To force the email address from which emails are sent, you need to create the following key in
-the System Parameters of the database:
+To force the email address from which emails are sent, you need to use a combination of the following keys in the system parameters of the database:
 
-- If ``mail.default.from`` is set, and contains a full email address, all outgoing emails are sent
-  from the given address. This is a requirement to use `Outlook with Odoo 
-  <https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365#option-1-authenticate-your-device-or-application-directly-with-a-microsoft-365-or-office-365-mailbox-and-send-mail-using-smtp-auth-client-submission>`_.
+- ``mail.default.from``: accepts the local part or a complete email address as value
+- ``mail.default.from_filter``: accepts a domain name or a full email address as value
+
+If the email address of the author does not match `mail.default.from_filter`, the email address is replaced by `mail.default.from` (if it contains a full email address) or a combination of `mail.default.from` and `mail.catchall.domain`.
 
 You access the **System Parameters** in :ref:`developer mode <developer-mode>` in the :menuselection:`Settings -->
 Technical --> Parameters --> System Parameters` menu.
