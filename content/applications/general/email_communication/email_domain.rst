@@ -152,12 +152,14 @@ also be used for other lesser known providers.
 Use a default email address
 ===========================
 
-To force the email address from which emails are sent, you need to use a combination of the following keys in the system parameters of the database:
+To force the email address from which emails are sent, a combination of the following keys needs to be set in the system parameters of the database:
 
 - ``mail.default.from``: accepts the local part or a complete email address as value
 - ``mail.default.from_filter``: accepts a domain name or a full email address as value
 
 If the email address of the author does not match `mail.default.from_filter`, the email address is replaced by `mail.default.from` (if it contains a full email address) or a combination of `mail.default.from` and `mail.catchall.domain`.
+
+For example  "Admin" <admin@example.com> => "Admin" <notifications@mycompany.odoo.com>. If the `mail.default.from_filter` system parameter is not set then no email will be replaced; should only the domain be listed then all emails with that domain will be preserved; and if a full email address is listed then all emails will be replaced by the given address.
 
 You access the **System Parameters** in :ref:`developer mode <developer-mode>` in the :menuselection:`Settings -->
 Technical --> Parameters --> System Parameters` menu.
