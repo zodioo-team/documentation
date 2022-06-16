@@ -1,3 +1,5 @@
+.. _overview/localizations-list:
+
 ===========================
 List of supported countries
 ===========================

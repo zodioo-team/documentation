@@ -1,3 +1,5 @@
+.. _overview/fiscal-localization-package:
+
 ============================
 Fiscal localization packages
 ============================
