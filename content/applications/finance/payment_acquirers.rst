@@ -13,6 +13,7 @@ Payment acquirers (credit cards, online payments)
    payment_acquirers/authorize
    payment_acquirers/buckaroo
    payment_acquirers/flutterwave
+   payment_acquirers/mercado_pago
    payment_acquirers/mollie
    payment_acquirers/ogone
    payment_acquirers/paypal
@@ -88,6 +89,11 @@ Online payment acquirers
      - |V|
      -
      -
+   * - :doc:`Mercado Pago <payment_acquirers/mercado_pago>`
+     - Payment from the acquirer website
+     -
+     -
+     - Full and partial
    * - :doc:`Mollie <payment_acquirers/mollie>`
      - Payment from the acquirer website
      -
@@ -323,6 +329,7 @@ payment method... What best suit your needs.
    - :doc:`payment_acquirers/alipay`
    - :doc:`payment_acquirers/authorize`
    - :doc:`payment_acquirers/buckaroo`
+   - :doc:`payment_acquirers/mercado_pago`
    - :doc:`payment_acquirers/mollie`
    - :doc:`payment_acquirers/ogone`
    - :doc:`payment_acquirers/paypal`
