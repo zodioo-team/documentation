@@ -2,14 +2,15 @@
 Adyen
 =====
 
-`Adyen <https://www.adyen.com/>`_ is a Dutch-based company that offers several online payment
+`Adyen <https://www.adyen.com/>`_ is a Dutch company that offers several online payment
 possibilities.
-
-Configuration
-=============
 
 .. seealso::
    - :ref:`payment_acquirers/add_new`
+   - :doc:`../payment_acquirers`
+
+Configuration
+=============
 
 Credentials tab
 ---------------
@@ -27,8 +28,10 @@ You can copy your credentials from your Adyen account, and paste them in the rel
 the **Credentials** tab.
 
 .. important::
-   If you are trying Adyen as a test, with a *test account*, change the **State** to *Test Mode*. We
-   recommend doing this on a test Odoo database, rather than on your main database.
+   If you are trying Adyen as a test, with an Adyen *test account*, head to
+   :menuselection:`Accounting --> Configuration --> Payment Acquirers`. There, click on
+   :guilabel:`Adyen`, enable :guilabel:`Test Mode` and enter your credentials in the
+   :guilabel:`Credentials` tab.
 
 .. _adyen/api_and_client_keys:
 
@@ -58,15 +61,19 @@ this, log into your Adyen account then go to :menuselection:`Developers --> Webh
    :align: center
    :alt: Configure a webhook.
 
-There, in :menuselection:`Transport --> URL`, enter your server address followed by
-`/payment/adyen/notification`.
+There, in :menuselection:`General --> Server configuration --> URL`, enter your server address
+followed by `/payment/adyen/notification`.
 
-.. image:: adyen/adyen_webhook_url.png
+.. image:: adyen/adyen-webhook-url.png
    :align: center
    :alt: Enter the notification URL.
 
-Then continue in :menuselection:`Additional Settings --> HMAC Key --> Generate new HMAC key`. Be
-careful to copy it as you'll not be allowed to get it later without generating a new one.
+Then enter :menuselection:`Security --> HMAC Key --> Generate`. Be careful to copy the key as you
+will not be allowed to do it later without generating a new one.
+
+.. image:: adyen/adyen-hmac-key.png
+   :align: center
+   :alt: Generate a HMAC key and save it.
 
 You have to save the webhook to finalize its creation.
 
@@ -76,10 +83,11 @@ URLs
 ~~~~
 
 To retrieve the URLs, log into your Adyen account, go to :menuselection:`Developers --> API URLs`.
-Pick one of the URLs listed next to **Recurring** as your **Recurring API URL** and one of the URLs
-listed next to **Checkout API** as your **Checkout API URL**.
+Select one of the URLs listed next to :guilabel:`Classic Recurring API` as your
+:guilabel:`Recurring API URL` and one listed next to :guilabel:`Checkout API` as your
+:guilabel:`Checkout API URL`.
 
-.. image:: adyen/adyen_api_urls.png
+.. image:: adyen/adyen-api-urls.png
    :align: center
    :alt: Get the links for the different API.
 
@@ -98,6 +106,3 @@ where payments will be made (the URLs of the servers hosting your Odoo instances
 .. image:: adyen/adyen_allowed_origins.png
    :align: center
    :alt: Allows payments originated from a specific domain.
-
-.. seealso::
-   - :doc:`../payment_acquirers`
