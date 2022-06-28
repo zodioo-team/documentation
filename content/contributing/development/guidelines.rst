@@ -3,9 +3,9 @@
 
 .. _reference/guidelines:
 
-===============
-Odoo Guidelines
-===============
+=================
+Coding Guidelines
+=================
 
 This page introduces the Odoo Coding Guidelines. Those aim to improve the
 quality of Odoo Apps code. Indeed proper code improves readability, eases
